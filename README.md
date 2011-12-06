@@ -1,5 +1,9 @@
 PullToRefresh
 
+Forked to make it easier to adapt pull-to-refresh functionality to any type of UIScrollView.
+
+- - - -
+
 A simple iPhone TableViewController for adding pull-to-refresh functionality.
 
 ![](http://s3.amazonaws.com/leah.baconfile.com/blog/refresh-small-1.png)
@@ -17,7 +21,7 @@ How to intall
 [PullRefreshTableViewController.m](http://github.com/leah/PullToRefresh/blob/master/Classes/PullRefreshTableViewController.m),
 and [arrow.png](http://github.com/leah/PullToRefresh/raw/master/arrow.png) into your project.
 
-2. Link against the QuartzCore framework (used for rotating the arrow image).
+2. Link against the QuartzCore.framework (used for rotating the arrow image).
 
 3. Create a TableViewController that is a subclass of PullRefreshTableViewController.
 
