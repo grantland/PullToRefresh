@@ -128,9 +128,7 @@
 }
 
 - (void)refresh {
-    // This is just a demo. Override this method with your custom reload action.
-    // Don't forget to call stopLoading at the end.
-    [self performSelector:@selector(stopLoading) withObject:nil afterDelay:2.0];
+    [self startLoading];
 }
 
 - (void)startLoading {
@@ -144,9 +142,6 @@
     refreshArrow_.hidden = YES;
     [refreshSpinner_ startAnimating];
     [UIView commitAnimations];
-
-    // Refresh action!
-    [self refresh];
 }
 
 - (void)stopLoading {
@@ -201,7 +196,7 @@
     isDragging_ = NO;
     if (scrollView.contentOffset.y <= -REFRESH_HEADER_HEIGHT) {
         // Released above the header
-        [self startLoading];
+        [self refresh];
     }
 }
 
