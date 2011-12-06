@@ -6,11 +6,11 @@
 //  Copyright Plancast 2010. All rights reserved.
 //
 
-#import "PullToRefreshAppDelegate.h"
+#import "MainAppDelegate.h"
 #import "DemoTableViewController.h"
 
 
-@implementation PullToRefreshAppDelegate
+@implementation MainAppDelegate
 
 @synthesize window;
 @synthesize navigationController;

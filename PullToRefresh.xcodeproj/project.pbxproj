@@ -7,35 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* PullToRefreshAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PullToRefreshAppDelegate.m */; };
-		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
-		28C286E10D94DF7D0034E888 /* DemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* DemoTableViewController.m */; };
-		4CAFBC8011FC96FC00651784 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAFBC7F11FC96FC00651784 /* PullRefreshTableViewController.m */; };
-		4CAFBCEF11FC994F00651784 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFBCEE11FC994F00651784 /* README.markdown */; };
 		4CAFBD0111FC9B2100651784 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAFBD0011FC9B2100651784 /* QuartzCore.framework */; };
-		4CBE3BEE11FE21CB007696B3 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBE3BED11FE21CB007696B3 /* arrow.png */; };
+		EE9C83E1148DD96B001BDECE /* DemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C83DC148DD96B001BDECE /* DemoTableViewController.m */; };
+		EE9C83E2148DD96B001BDECE /* MainAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C83DE148DD96B001BDECE /* MainAppDelegate.m */; };
+		EE9C83E3148DD96B001BDECE /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C83E0148DD96B001BDECE /* PullRefreshTableViewController.m */; };
+		EE9C83E6148DD971001BDECE /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EE9C83E5148DD971001BDECE /* arrow.png */; };
+		EE9C83E9148DD979001BDECE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C83E7148DD979001BDECE /* main.m */; };
+		EE9C83EB148DD97E001BDECE /* PullToRefresh-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE9C83EA148DD97E001BDECE /* PullToRefresh-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* PullToRefreshAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullToRefreshAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* PullToRefreshAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullToRefreshAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* PullToRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullToRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28A0AAE50D9B0CCF005BE974 /* PullToRefresh_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullToRefresh_Prefix.pch; sourceTree = "<group>"; };
-		28C286DF0D94DF7D0034E888 /* DemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewController.h; sourceTree = "<group>"; };
-		28C286E00D94DF7D0034E888 /* DemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewController.m; sourceTree = "<group>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4CAFBC7E11FC96FC00651784 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
-		4CAFBC7F11FC96FC00651784 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
-		4CAFBCEE11FC994F00651784 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		4CAFBD0011FC9B2100651784 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		4CBE3BED11FE21CB007696B3 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* PullToRefresh-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PullToRefresh-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		EE9C83DB148DD96B001BDECE /* DemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoTableViewController.h; path = PullToRefreshTableView/Classes/DemoTableViewController.h; sourceTree = SOURCE_ROOT; };
+		EE9C83DC148DD96B001BDECE /* DemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoTableViewController.m; path = PullToRefreshTableView/Classes/DemoTableViewController.m; sourceTree = SOURCE_ROOT; };
+		EE9C83DD148DD96B001BDECE /* MainAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainAppDelegate.h; path = PullToRefreshTableView/Classes/MainAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		EE9C83DE148DD96B001BDECE /* MainAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainAppDelegate.m; path = PullToRefreshTableView/Classes/MainAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		EE9C83DF148DD96B001BDECE /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PullRefreshTableViewController.h; path = PullToRefreshTableView/Classes/PullRefreshTableViewController.h; sourceTree = SOURCE_ROOT; };
+		EE9C83E0148DD96B001BDECE /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PullRefreshTableViewController.m; path = PullToRefreshTableView/Classes/PullRefreshTableViewController.m; sourceTree = SOURCE_ROOT; };
+		EE9C83E5148DD971001BDECE /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = PullToRefreshTableView/Images/arrow.png; sourceTree = SOURCE_ROOT; };
+		EE9C83E7148DD979001BDECE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PullToRefreshTableView/main.m; sourceTree = "<group>"; };
+		EE9C83E8148DD979001BDECE /* PullToRefresh_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PullToRefresh_Prefix.pch; path = PullToRefreshTableView/PullToRefresh_Prefix.pch; sourceTree = "<group>"; };
+		EE9C83EA148DD97E001BDECE /* PullToRefresh-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PullToRefresh-Info.plist"; path = "PullToRefreshTableView/PullToRefresh-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +55,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* PullToRefreshAppDelegate.h */,
-				1D3623250D0F684500981E51 /* PullToRefreshAppDelegate.m */,
-				28C286DF0D94DF7D0034E888 /* DemoTableViewController.h */,
-				28C286E00D94DF7D0034E888 /* DemoTableViewController.m */,
-				4CAFBC7E11FC96FC00651784 /* PullRefreshTableViewController.h */,
-				4CAFBC7F11FC96FC00651784 /* PullRefreshTableViewController.m */,
+				EE9C83DB148DD96B001BDECE /* DemoTableViewController.h */,
+				EE9C83DC148DD96B001BDECE /* DemoTableViewController.m */,
+				EE9C83DD148DD96B001BDECE /* MainAppDelegate.h */,
+				EE9C83DE148DD96B001BDECE /* MainAppDelegate.m */,
+				EE9C83DF148DD96B001BDECE /* PullRefreshTableViewController.h */,
+				EE9C83E0148DD96B001BDECE /* PullRefreshTableViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -89,8 +88,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				28A0AAE50D9B0CCF005BE974 /* PullToRefresh_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				EE9C83E7148DD979001BDECE /* main.m */,
+				EE9C83E8148DD979001BDECE /* PullToRefresh_Prefix.pch */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -98,9 +97,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4CBE3BED11FE21CB007696B3 /* arrow.png */,
-				4CAFBCEE11FC994F00651784 /* README.markdown */,
-				8D1107310486CEB800E47090 /* PullToRefresh-Info.plist */,
+				EE9C83CB148DD807001BDECE /* Images */,
+				EE9C83EA148DD97E001BDECE /* PullToRefresh-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -114,6 +112,14 @@
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE9C83CB148DD807001BDECE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EE9C83E5148DD971001BDECE /* arrow.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +175,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CAFBCEF11FC994F00651784 /* README.markdown in Resources */,
-				4CBE3BEE11FE21CB007696B3 /* arrow.png in Resources */,
+				EE9C83E6148DD971001BDECE /* arrow.png in Resources */,
+				EE9C83EB148DD97E001BDECE /* PullToRefresh-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,10 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* PullToRefreshAppDelegate.m in Sources */,
-				28C286E10D94DF7D0034E888 /* DemoTableViewController.m in Sources */,
-				4CAFBC8011FC96FC00651784 /* PullRefreshTableViewController.m in Sources */,
+				EE9C83E1148DD96B001BDECE /* DemoTableViewController.m in Sources */,
+				EE9C83E2148DD96B001BDECE /* MainAppDelegate.m in Sources */,
+				EE9C83E3148DD96B001BDECE /* PullRefreshTableViewController.m in Sources */,
+				EE9C83E9148DD979001BDECE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +205,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PullToRefresh_Prefix.pch;
-				INFOPLIST_FILE = "PullToRefresh-Info.plist";
+				GCC_PREFIX_HEADER = PullToRefreshTableView/PullToRefresh_Prefix.pch;
+				INFOPLIST_FILE = "PullToRefreshTableView/PullToRefresh-Info.plist";
 				PRODUCT_NAME = PullToRefresh;
 			};
 			name = Debug;
@@ -211,8 +217,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PullToRefresh_Prefix.pch;
-				INFOPLIST_FILE = "PullToRefresh-Info.plist";
+				GCC_PREFIX_HEADER = PullToRefreshTableView/PullToRefresh_Prefix.pch;
+				INFOPLIST_FILE = "PullToRefreshTableView/PullToRefresh-Info.plist";
 				PRODUCT_NAME = PullToRefresh;
 				VALIDATE_PRODUCT = YES;
 			};

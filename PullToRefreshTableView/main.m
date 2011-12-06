@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MainAppDelegate.h"
+
 int main(int argc, char *argv[]) {
 
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, @"PullToRefreshAppDelegate");
+    int retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([MainAppDelegate class]));
     [pool release];
     return retVal;
 }
