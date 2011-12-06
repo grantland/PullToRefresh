@@ -5,6 +5,8 @@
 //  Created by Leah Culver on 7/2/10.
 //  Copyright (c) 2010 Leah Culver
 //
+//  Modified by Grantland Chew 12/5/11.
+//
 //  Permission is hereby granted, free of charge, to any person
 //  obtaining a copy of this software and associated documentation
 //  files (the "Software"), to deal in the Software without
@@ -31,15 +33,17 @@
 
 
 @interface PullRefreshTableViewController : UITableViewController {
-    UIView *refreshHeaderView;
-    UILabel *refreshLabel;
-    UIImageView *refreshArrow;
-    UIActivityIndicatorView *refreshSpinner;
-    BOOL isDragging;
-    BOOL isLoading;
-    NSString *textPull;
-    NSString *textRelease;
-    NSString *textLoading;
+
+    @private
+    UIView *refreshHeaderView_;
+    UILabel *refreshLabel_;
+    UIImageView *refreshArrow_;
+    UIActivityIndicatorView *refreshSpinner_;
+    BOOL isDragging_;
+    BOOL isLoading_;
+    NSString *textPull_;
+    NSString *textRelease_;
+    NSString *textLoading_;
 }
 
 @property (nonatomic, retain) UIView *refreshHeaderView;
@@ -50,10 +54,19 @@
 @property (nonatomic, copy) NSString *textRelease;
 @property (nonatomic, copy) NSString *textLoading;
 
-- (void)setupStrings;
-- (void)addPullToRefreshHeader;
+/**
+ * @abstract Set the Pull To Refresh header to the Loading state
+ */
 - (void)startLoading;
+
+/**
+ * @abstract Set the Pull To Refresh header to the Done Loading state
+ */
 - (void)stopLoading;
+
+/**
+ * @abstract Refresh the view
+ */
 - (void)refresh;
 
 @end
