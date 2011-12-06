@@ -65,7 +65,8 @@
    refreshHeaderView=refreshHeaderView_,
         refreshLabel=refreshLabel_,
         refreshArrow=refreshArrow_,
-      refreshSpinner=refreshSpinner_;
+      refreshSpinner=refreshSpinner_,
+      refreshEnabled=refreshEnabled_;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -83,6 +84,12 @@
     return self.tableView;
 }
 
+- (void)setRefreshEnabled:(BOOL)refreshEnabled
+{
+    refreshEnabled_ = refreshEnabled;
+    refreshHeaderView_.hidden = !refreshEnabled_;
+}
+
 // Call in init or something
 - (void)addPullToRefreshHeader
 {
@@ -91,6 +98,7 @@
 
     refreshHeaderView_ = [[UIView alloc] initWithFrame:CGRectZero];
     refreshHeaderView_.backgroundColor = [UIColor clearColor];
+    [self setRefreshEnabled:YES];
 
     refreshLabel_ = [[UILabel alloc] initWithFrame:CGRectZero];
     refreshLabel_.backgroundColor = [UIColor clearColor];
@@ -176,7 +184,7 @@
             [self scrollView].contentInset = UIEdgeInsetsZero;
         else if (scrollView.contentOffset.y >= -REFRESH_HEADER_HEIGHT)
             [self scrollView].contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
-    } else if (isDragging_ && scrollView.contentOffset.y < 0) {
+    } else if (refreshEnabled_ && isDragging_ && scrollView.contentOffset.y < 0) {
         // Update the arrow direction and label
         [UIView beginAnimations:nil context:NULL];
         if (scrollView.contentOffset.y < -REFRESH_HEADER_HEIGHT) {
@@ -194,7 +202,7 @@
 - (void)ptrScrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     if (isLoading_) return;
     isDragging_ = NO;
-    if (scrollView.contentOffset.y <= -REFRESH_HEADER_HEIGHT) {
+    if (refreshEnabled_ && scrollView.contentOffset.y <= -REFRESH_HEADER_HEIGHT) {
         // Released above the header
         [self refresh];
     }

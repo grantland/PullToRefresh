@@ -44,6 +44,7 @@
     NSString *textPull_;
     NSString *textRelease_;
     NSString *textLoading_;
+    BOOL refreshEnabled_;
 }
 
 @property (nonatomic, retain) UIView *refreshHeaderView;
@@ -53,6 +54,7 @@
 @property (nonatomic, copy) NSString *textPull;
 @property (nonatomic, copy) NSString *textRelease;
 @property (nonatomic, copy) NSString *textLoading;
+@property (nonatomic, assign) BOOL refreshEnabled;
 
 /**
  * @abstract Set the Pull To Refresh header to the Loading state
